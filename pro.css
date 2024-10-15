@@ -1,0 +1,162 @@
+/* Global Styles */
+body, h1, h2, p, ul, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header .search-cart {
+    display: flex;
+    align-items: center;
+}
+
+header .search-cart input {
+    padding: 5px;
+    margin-right: 15px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f5d9b9;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #666;
+}
+
+.cta-btn {
+    padding: 10px 25px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.category-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.category-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #ff9800;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
